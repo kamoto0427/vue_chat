@@ -1,18 +1,7 @@
 <template>
   <v-app id="inspire">
-    <v-app-bar
-      app
-      shrink-on-scroll
-    >
 
-      <v-toolbar-title>ユーザー一覧</v-toolbar-title>
-
-      <v-spacer></v-spacer>
-
-      <v-btn icon>
-        <v-icon>mdi-dots-vertical</v-icon>
-      </v-btn>
-    </v-app-bar>
+    <h2>ユーザー一覧</h2>
 
     <v-main>
       <v-container>
@@ -22,7 +11,7 @@
             :key="n"
             cols="4"
           >
-          <router-link :to="{ path: '/about', query: { user_id: n }}">
+          <router-link :to="{ path: '/chat', query: { user_id: n }}">
             <v-avatar color="grey lighten-2" size="128"></v-avatar>
           </router-link>
           </v-col>
